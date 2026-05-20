@@ -19,7 +19,25 @@
       margin: auto;
       padding: 30px 20px;
     }
+    .container {
+ 　　 display: flex;
+　　}
 
+　　.column-left,
+　　.column-right {
+　　  width: 48%;
+　　}
+　　@media screen and (max-width: 768px) {
+ 　　 .container {
+ 　　   flex-direction: column
+ 　　 }
+
+ 　　 .column-left,
+ 　　 .column-right {
+  　　  width: 100%
+ 　　 }
+　　}
+    
     .card {
       background: white;
       border-radius: 25px;
